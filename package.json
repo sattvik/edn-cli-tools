@@ -1,11 +1,14 @@
 {
   "name": "edn-cli-tools",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "CLI tools for manipulating EDN",
   "author": "Daniel Solano Gómez",
   "license": "EPL-1.0",
   "bin": {
     "edn2transit": "target/main.js",
     "transit2edn": "target/main.js"
+  },
+  "scripts": {
+    "prepare": "boot prod"
   }
 }
