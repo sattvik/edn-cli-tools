@@ -13,8 +13,8 @@
         argv (.-argv process)
         invoked-as (aget argv 1)]
     (cond
-      (str/ends-with? invoked-as "e2t") :edn->transit
-      (str/ends-with? invoked-as "t2e") :transit->edn)))
+      (str/ends-with? invoked-as "edn2transit") :edn->transit
+      (str/ends-with? invoked-as "transit2edn") :transit->edn)))
 
 (defn main
   [& args]
